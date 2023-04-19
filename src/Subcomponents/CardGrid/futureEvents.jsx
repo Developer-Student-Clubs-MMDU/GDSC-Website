@@ -6,7 +6,7 @@ function FutureEvents() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    const eventsRef = firebase.database().ref('events');
+    const eventsRef = firebase.database().ref('users');
     eventsRef.on('value', (snapshot) => {
       const eventsData = snapshot.val();
       const eventsArray = [];
