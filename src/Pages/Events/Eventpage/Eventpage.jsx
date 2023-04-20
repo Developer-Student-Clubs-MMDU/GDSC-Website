@@ -34,9 +34,6 @@ function Eventpage() {
         <div className="E-3">
          <Outlet/>
         </div>
-        {/* <div className="E-4">
-        <FutureEvents />
-        </div> */}
       </div>
     </>
   )

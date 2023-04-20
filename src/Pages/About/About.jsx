@@ -2,11 +2,27 @@ import React, { useEffect } from 'react'
 import './About.sass'
 import Image from '../../Assets/images/image.jpg'
 import { BsGithub } from 'react-icons/bs'
-
+import Lead from '../../Subcomponents/TeamCards/Lead/Lead'
+import Team from '../../Subcomponents/Carousels/MeetTeam/Team'
+import { useLocation } from 'react-router-dom'
 
 function About() {
-   
     
+//      const location = useLocation()
+
+//     location = {
+//         pathname:"/about",
+//         hash: "#A-4-1"
+//     }
+   
+//     useEffect(()=> {
+        
+//             let elem = document.getElementById("A-4-1")
+//             if (elem) {
+//                 elem.scrollIntoView()
+            
+//             }
+// },[])
 
     return (
         <div className="A-Container">
@@ -23,18 +39,17 @@ function About() {
                     <img src={Image} alt="" />
                 </div>
             </div>
-            {/* <div className="A-3">
-                <div className="A-3-1" />
-                <div className="A-3-2">
-                    <h2>Levi Ackermann</h2>
-                     <p>Scout Captain</p>
-                     <ul>
-                        <li><BsGithub/></li>
-                        <li></li>
-                        <li></li>
-                     </ul>
+            <div className="A-4">
+                <div className="A-4-1" id='A-4-1'>
+                <h1>Meet The Team</h1>
                 </div>
-            </div> */}
+              <Team/>
+              <Team/>
+              <Team/>
+              <Team/>
+              <Team/>
+              <Team/>
+        </div>
         </div>
     )
 }

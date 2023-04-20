@@ -11,12 +11,7 @@
   margin-right: auto;
 }
 .G-H .G-H-L img {
-  width: 18vw;
-}
-@media (max-width: 1028px) {
-  .G-H .G-H-L img {
-    width: 32vw;
-  }
+  width: 370px;
 }
 .G-H .G-H-N {
   width: -moz-fit-content;
@@ -28,6 +23,12 @@
   justify-content: space-around;
   align-items: center;
   padding-right: 2%;
+  font-size: 1.2rem;
+}
+@media (max-width: 850px) {
+  .G-H .G-H-N {
+    display: none;
+  }
 }
 .G-H .G-H-N li {
   padding-left: 2vw;
@@ -41,4 +42,48 @@
 }
 .G-H .G-H-N li a:active {
   color: #4285F4;
+}
+.G-H .G-H-N-R {
+  display: none;
+}
+@media (max-width: 850px) {
+  .G-H .G-H-N-R {
+    display: block;
+  }
+}
+.G-H .G-H-N-R:hover .drop {
+  transform: translateX(-95%);
+}
+.G-H .G-H-N-R .drop {
+  right: -35%;
+  transition: all 0.5s ease-out;
+}
+.G-H .G-H-N-R svg {
+  margin: 2%;
+  width: 100px;
+  transform: scale(1.7);
+}
+.G-H .G-H-N-R ol {
+  width: 30%;
+  height: 100%;
+  z-index: 1;
+  top: 3%;
+  position: absolute;
+  background: white;
+  padding: 2%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.7rem;
+}
+.G-H .G-H-N-R ol li {
+  padding: 7%;
+}
+.G-H .G-H-N-R ol li a {
+  text-decoration: none;
+  color: black;
+}
+.G-H .G-H-N-R ol li a:hover {
+  border-bottom: 2px solid #4285f4;
+  color: #4285f4;
 }/*# sourceMappingURL=Header.css.map */

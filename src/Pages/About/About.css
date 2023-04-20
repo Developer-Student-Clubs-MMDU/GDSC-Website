@@ -67,7 +67,6 @@
 .A-Container .A-3 {
   width: 394px;
   height: 487px;
-  background: linear-gradient(rgb(239, 83, 80) 40%, rgb(255, 255, 255) 30%);
   border: 1px solid black;
 }
 .A-Container .A-3 .A-3-1 {
@@ -85,4 +84,15 @@
 .A-Container .A-3 .A-3-2 {
   position: relative;
   top: 20%;
+}
+.A-Container .A-4 {
+  display: grid;
+  -webkit-padding-start: 4rem;
+          padding-inline-start: 4rem;
+}
+.A-Container .red {
+  background: linear-gradient(rgb(239, 83, 80) 40%, rgb(255, 255, 255) 30%);
+}
+.A-Container .green {
+  background: linear-gradient(#66BB6A 40%, rgb(255, 255, 255) 30%);
 }/*# sourceMappingURL=About.css.map */
