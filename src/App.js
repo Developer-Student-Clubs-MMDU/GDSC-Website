@@ -14,8 +14,9 @@ import ScreenLoader from './Pages/Loader/ScreenLoader';
 function App() {
   return (
       <>
-      <ScreenLoader/>
+      {/* <ScreenLoader/> */}
       <BrowserRouter>
+      
         <div className="App">
           <Header />
           <Router />
