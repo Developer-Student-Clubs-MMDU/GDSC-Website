@@ -1,12 +1,11 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import './About.sass'
 import Image from '../../Assets/images/image.jpg'
-import { BsGithub } from 'react-icons/bs'
-import Lead from '../../Subcomponents/TeamCards/Lead/Lead'
 import Team from '../../Subcomponents/Carousels/MeetTeam/Team'
-import { useLocation } from 'react-router-dom'
+
 
 function About() {
+
     
 //      const location = useLocation()
 

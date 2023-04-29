@@ -1,10 +1,29 @@
-import React from 'react'
+import React,{ useEffect,useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './Team.sass';
+import {db} from '../../../Firebase'
+import { collection, getDocs } from "firebase/firestore";
+
 
 function Team() {
+
+  const [slide, setSlide] = useState([{}]);
+    const Fetch = async()=>{
+      await getDocs(collection(db, "gdscTeam"))
+      .then((querySnapshot)=>{               
+          const newData = querySnapshot.docs
+              .map((doc) => ({...doc.data(), id:doc.id }));
+              setSlide(newData);                
+          console.log(slide);
+      })}
+  
+    useEffect(()=>{
+      Fetch();
+    },[]);
+    
+
   const settings = {
     className: "center",
     centerMode: true,
@@ -48,7 +67,7 @@ return (
       <h1> Batch {a.batch}</h1>
         <div className="imgslider">
             <Slider {...settings}>
-                {a.member.map((item) => (
+                {slide.map((item) => (
                     <div className="slide" id="card" >
                         <img src={item.img} />
                         <h3>{item.name}</h3>

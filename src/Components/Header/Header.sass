@@ -1,5 +1,5 @@
 .G-H
-    z-index: 1
+    z-index: 5
     // position: fixed 
     width: 98%
     display: flex
@@ -16,7 +16,7 @@
         margin-right: auto
         img
             width: 370px
-            @media(max-width: 500px) 
+            @media(max-width: 500px)
                 width: 60vw
     .G-H-N
         width: -moz-fit-content
@@ -32,8 +32,26 @@
         font-size: 1.2rem
         @media(max-width: 850px)
             display: none
+        .G-H-N-DROP-Container
+            display: none
         li
             padding-left: 2vw
+            &:hover
+                    .G-H-N-DROP-Container
+                        display: block
+            ol
+                position: absolute
+                background-color: white
+                list-style-type: none
+                top: 4%
+                padding-left: 0%
+                padding: 2% 1% 1% 1%
+                li
+                    padding-left: 0%
+                    text-align: left
+                    padding-top: 3%
+                    a
+                
             a
                 color: #404040
                 text-decoration: none
@@ -47,18 +65,20 @@
             display: block
         &:hover
             .drop
-                transform: translateX(-95%) 
-                
-                 
+                transform: translateX(-95%)
+
         .drop
             right: -35%
             transition: all 0.5s ease-out
-            
+            @media(max-width: 500px)
+                right: -73%
+                transition: all 0.5s ease-out
+
         svg
             margin: 2%
             width: 100px
             transform: scale(1.7)
-           
+
         ol
             width: 30%
             height: 100%
@@ -67,22 +87,22 @@
             position: absolute
             // right: 0.1%
             background: white
-            padding:2%
+            padding: 2%
             list-style-type: none
             display: flex
             flex-direction: column
             // justify-content: space-evenly
             font-size: 1.7rem
             // display: none
-            // @media(max-width: 500px)
-                // width: 60%
-                // padding:6%
+            @media(max-width: 500px)
+                width: 60%
+                padding:6%
 
             li
                 padding: 7%
                 a
-                  text-decoration: none
-                  color: black
-                  &:hover
+                    text-decoration: none
+                    color: black
+                &:hover
                     border-bottom: 2px solid #4285f4
                     color: #4285f4
