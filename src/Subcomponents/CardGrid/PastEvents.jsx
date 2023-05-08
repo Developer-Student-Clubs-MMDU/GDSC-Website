@@ -7,10 +7,6 @@ import { useEffect,useState } from 'react'
 
 
 function PastEvents() {
-  console.log("past events page prompt !")
-
-
-
 //   const initialState = [
 //     {
 //         id:12,
@@ -99,11 +95,11 @@ const [cards, setCards] = useState([{}]);
     Fetch();
   },[]);
   return (
-    <div className="E-SC-container">
+    <div className="E-SC-container" >
          {
-          cards.map((item)=>{
+          cards.map((item,i)=>{
            return(
-            <div className="E-SC-1" key={item.id} >
+            <div className="E-SC-1" key={i} >
             <div className="E-SC-1-1">
             <img src={item.imageUrl} alt="" />
             </div>
@@ -116,21 +112,21 @@ const [cards, setCards] = useState([{}]);
                   <tr  >
                     <td colSpan="2" id="subhead">Details</td>
                   </tr>
-                  {/* <tr>
+                  <tr>
                     <td>Date :</td>
-                    <td>{item.details.date}</td>
-                  </tr> */}
-                  {/* <tr>
+                    <td>{item.date}</td>
+                  </tr>
+                  <tr>
                     <td>Time :</td>
-                    <td> {item.details.time.start} to {item.details.time.finish} </td>
-                  </tr> */}
+                    <td> {item.startTime} to {item.finishTime} </td>
+                  </tr>
                   <tr>
                     <td>Venue : </td>
                     <td>{item.venue}</td>
                   </tr>
                 </table>
-                <button>
-                  <Link to=''> Register</Link>
+                <button >
+                  <Link to={'/eventdetails/'+item.id}>Details</Link>
                 </button>
             </div>
           </div>

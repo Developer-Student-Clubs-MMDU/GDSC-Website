@@ -14,7 +14,7 @@ function Router() {
         <Routes>
             <Route path='/about' element={<About />} />
             <Route path='/' element={<Home />} />
-            <Route path="/eventdetails" element={<EventDetails/>} />
+            <Route path="/eventdetails/:id" element={<EventDetails/>} />
             <Route path="/PastEvents" element={<PastEventpage/>} />
             <Route path="/UpcomingEvents" element={<UpcomingEventpage/>} />
         </Routes>

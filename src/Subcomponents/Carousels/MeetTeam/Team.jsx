@@ -69,7 +69,7 @@ return (
             <Slider {...settings}>
                 {slide.map((item) => (
                     <div className="slide" id="card" >
-                        <img src={item.img} />
+                        <img src={item.imgUrl} />
                         <h3>{item.name}</h3>
                         <p>{item.position}</p>
                     </div>
@@ -84,44 +84,44 @@ export default Team
 
 
 
-const a = {
-  batch: "2021-22",
+// const a = {
+//   batch: "2021-22",
 
-  member: [
-    {
-      name: "sakshi",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: "lead",
-    },
-    {
-      name: "sujal",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: "co lead"
-    },
-    {
-      name: "komal",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: "core member"
-    }, {
-      name: "bajrang",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: "core member"
-    }, {
-      name: "aaditya chaudhary",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: 'core member'
-    }, {
-      name: "rajvinder",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: " core member",
-    }, {
-      name: "sushant",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: "core member"
-    }, {
-      name: "vansh",
-      img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
-      position: "core member"
-    }
-  ]
-}
+//   member: [
+//     {
+//       name: "sakshi",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: "lead",
+//     },
+//     {
+//       name: "sujal",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: "co lead"
+//     },
+//     {
+//       name: "komal",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: "core member"
+//     }, {
+//       name: "bajrang",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: "core member"
+//     }, {
+//       name: "aaditya chaudhary",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: 'core member'
+//     }, {
+//       name: "rajvinder",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: " core member",
+//     }, {
+//       name: "sushant",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: "core member"
+//     }, {
+//       name: "vansh",
+//       img: "https://i.pinimg.com/736x/5b/84/b4/5b84b422f997e8fb75fd7beb9169e603.jpg",
+//       position: "core member"
+//     }
+//   ]
+// }

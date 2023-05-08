@@ -57,7 +57,7 @@ function FutureEvents(){
 //         },
 //         status: 'upcoming',
 //         type: 'Hackathon',
-//         img: 'https://th.bing.com/th/id/OIP.DX2t5tVds1PRUeKQotQYnAHaFY?pid=ImgDet&rs=1',
+//         img: 'https://th.bing.com/th/id/OIP.DX2t5 tVds1PRUeKQotQYnAHaFY?pid=ImgDet&rs=1',
 //         description:'',
 //     },
 //     {
@@ -113,21 +113,21 @@ function FutureEvents(){
                   <tr  >
                     <td colSpan="2" id="subhead">Details</td>
                   </tr>
-                  {/* <tr>
+                  <tr>
                     <td>Date :</td>
-                    <td>{item.details.date}</td>
-                  </tr> */}
-                  {/* <tr>
+                    <td>{item.date}</td>
+                  </tr>
+                  <tr>
                     <td>Time :</td>
-                    <td> {item.details.time.start} to {item.details.time.finish} </td>
-                  </tr> */}
+                    <td> {item.startTime} to {item.finishTime} </td>
+                  </tr>
                   <tr>
                     <td>Venue : </td>
                     <td>{item.venue}</td>
                   </tr>
                 </table>
                 <button>
-                  <Link to=''> Register</Link>
+                  <Link to={item.form}> Register</Link>
                 </button>
             </div>
           </div>
