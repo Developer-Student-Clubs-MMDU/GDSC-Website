@@ -5,12 +5,10 @@ import "./Moments.sass";
 import React from 'react'
 
 
-function Moments() {
+function Moments({ image }) {
 
-    const img = "https://th.bing.com/th/id/R.463101ae80e319ed1569af3acc256f07?rik=fNSccco7m40kXg&riu=http%3a%2f%2fwww.goodworklabs.com%2fwp-content%2fuploads%2f2016%2f09%2fVishwas-Mudagal-Google-Event.jpg&ehk=FgHtVDtb1rSSdYrPhoTYBqqPA772MpkxchWGg%2bsEPmw%3d&risl=&pid=ImgRaw&r=0"
-    const moments = [img, img, img, img, img, img, img]
-
-    //  const images = useSelector(selectALL);
+    // const img = "https://th.bing.com/th/id/R.463101ae80e319ed1569af3acc256f07?rik=fNSccco7m40kXg&riu=http%3a%2f%2fwww.goodworklabs.com%2fwp-content%2fuploads%2f2016%2f09%2fVishwas-Mudagal-Google-Event.jpg&ehk=FgHtVDtb1rSSdYrPhoTYBqqPA772MpkxchWGg%2bsEPmw%3d&risl=&pid=ImgRaw&r=0"
+    // const moments = [img, img, img, img, img, img, img]
 
     const settings = {
         className: "center",
@@ -54,8 +52,8 @@ function Moments() {
         <div className="tag">
             <div className="imgslider">
                 <Slider {...settings}>
-                    {moments.map((item) => (
-                        <div className="slide" id="card" >
+                    {image.map((item) => (
+                        <div className="slide" id="card" key={item} >
                             <img src={item} />
                         </div>
                     ))}
