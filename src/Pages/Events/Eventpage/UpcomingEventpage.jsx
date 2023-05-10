@@ -12,7 +12,7 @@ function UpcomingEventpage() {
           <h1>Upcoming Events</h1>
         </div>
         <div className="E-2">
-          <Searchbar  />
+          {/* <Searchbar  /> */}
         </div>
         <div className="E-3">
           <FutureEvents />

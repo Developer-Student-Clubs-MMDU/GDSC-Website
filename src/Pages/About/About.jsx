@@ -43,11 +43,6 @@ function About() {
                 <h1>Meet The Team</h1>
                 </div>
               <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
-              <Team/>
         </div>
         </div>
     )

@@ -9,23 +9,36 @@ import { useParams } from 'react-router-dom';
 
 function EventDetails() {
   const {id} = useParams();
-  let arr;
+  let arr, item;
 
-    const [data, setdata] = useState([{}]);
-    const Fetch = async()=>{
-      await getDocs(collection(db, "users"))
-      .then((querySnapshot)=>{               
-          const newData = querySnapshot.docs
-              .map((doc) => ({...doc.data(), id:doc.id }));
-          setdata(newData);                
-          console.log(data);
-      })}
   
-    // const array =  data.filter(obj => obj.id == id); 
-    // const item = array[0];
-    useEffect(()=>{
-      Fetch();
-    },[]);
+
+    // const [data, setdata] = useState(false);
+    // const Fetch = async()=>{
+    //   await getDocs(collection(db, "users"))
+    //   .then((querySnapshot)=>{               
+    //       const newData = querySnapshot.docs
+    //           .map((doc) => ({...doc.data(), id:doc.id }));             
+    //       console.log(newData);
+    //       setTimeout(() => {
+    //         const arr =  newData.filter(obj => obj.id == id); 
+    //         console.log(arr)
+    //         item = arr[0];
+    //         console.log(item)
+    //         setdata(true)
+    //       }, 2)
+    //   })}
+   
+       arr = JSON.parse(localStorage.getItem('data'))
+       setTimeout(()=>{
+        const array =  arr.filter(obj => obj.id == id);
+        item = array[0]
+        console.log(item)
+       },1000)
+       
+       
+       
+      // Fetch();
 
   // const Speaker ={
   //   name:'James Olive',
@@ -34,26 +47,26 @@ function EventDetails() {
   // }
   return (
     <div className='ED-CONTAINER'>
-      {/* <div className="ED-1"><h1>Event Details</h1></div>
-      <div className="ED-2"><p>Past Events</p> <BsChevronRight /> <p>{item.title?item.title:""}</p> </div>
+      <div className="ED-1"><h1>Event Details</h1></div>
+      <div className="ED-2"><p>Past Events</p> <BsChevronRight /> <p>{item.title}</p> </div>
       <div className="ED-3">
-        <h1>{item.type?item.type:''} | {item.completeTitle ? item.completeTitle:''}</h1>
-        <p>{item.description ?item.description:''}</p>
+        <h1>{item.type} | {item.completeTitle }</h1>
+        <p>{item.description }</p>
       </div>
       <h2>Speaker</h2>
       <div className="ED-4">
         <div className="ED-4-1">
           <div className="ED-4-1-1">
-            <img src={item.speakerImg ?item.speakerImg:''} alt="" />
-            <h3>{item.speakerName?item.speakerName:''}</h3>
-            <p>{item.speakerType?item.speakerType:''}</p>
+            <img src={item.speakerImg } alt="" />
+            <h3>{item.speakerName}</h3>
+            <p>{item.speakerType}</p>
           </div>
         </div>
       </div>
       <div className="ED-5">
         <h2>Moments</h2>
-        <Moments image={item.EventImages?item.EventImages:''}/>
-      </div> */}
+        <Moments image={item.EventImages}/>
+      </div>
     </div>
   )
 }

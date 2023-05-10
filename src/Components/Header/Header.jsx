@@ -49,11 +49,11 @@ function Header() {
         <li> <Link to='/'>Home</Link> </li>
         <li> <Link to='/about' >About</Link> </li>
         <li>
-           Events
-          <ol className="G-H-N-DROP-Container">
+           <Link to='/UpcomingEvents'>Events</Link>
+          {/* <ol className="G-H-N-DROP-Container">
             <li><Link to="/UpcomingEvents" >Upcoming</Link></li>
             <li><Link to="/PastEvents"  >Past</Link></li>
-          </ol>
+          </ol> */}
         </li>
         <li> <Link to={"/about#card"} onClick={scroll} >Team</Link> </li>
         <li> <Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link> </li>
