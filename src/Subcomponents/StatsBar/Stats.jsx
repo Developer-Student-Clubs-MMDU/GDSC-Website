@@ -28,7 +28,7 @@ function Stats() {
                 </td>
                 <td>
                     <li>{data.footfall}</li>
-                    <li>Footfall</li>
+                    <li>Footfalls</li>
                 </td>
                 <td>
                     <li>{data.prizes}</li>
