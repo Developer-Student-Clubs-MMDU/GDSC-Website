@@ -21,12 +21,16 @@ function Collab() {
         //     <Carousel_2 /> */}
         //   </section>
         // </div>
-        <div className="H-Sc-Container">
+        <div className="H-Sc-Container" style={{
+          paddingTop:'3rem',
+        }}>
           <h1 style={{
             // fontSize:'rem',
+            fontWeight:'650'
           }} >Our Collaborators</h1>
           <p style={{
             fontSize: '2rem',
+            fontWeight:'500',
           }} >GDSC has been honored to partner up with these Organisations</p>
         <Carousel/>
         </div>
