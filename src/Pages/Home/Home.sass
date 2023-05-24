@@ -1,30 +1,49 @@
 .H-Container
-    width: 100vw
-    height: 100vh
-    font-weight: 100
-    background-position: 20% 20%
-    background-size: cover
-    background-repeat: no-repeat
-    display: flex
-    flex-direction: column
-    align-items: flex-start
-    justify-content: center
-    background-image: url("../../Assets/images/landing.jpg")
-    li
-        padding-inline-start: 7rem
-        margin: 0%
-        color: white
-        width: 35%
-        text-align: left
-        list-style-type: none
-        @media(max-width: 500px)
-          width: 90%
-          text-align: center
-        p
-            padding: 2%
-            margin: 0%
-            font-size: 2rem
-            position: relative
-            width: 50%
-            @media(max-width: 500px)
-                font-size: 1.3rem
+  width: 100vw
+  height: 100vh
+  font-weight: 500
+  background-position: 20% 20%
+  background-size: cover
+  background-repeat: no-repeat
+  display: flex
+  // grid-template-columns:1fr 3fr 
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+  background-image: url("../../Assets/images/landing.jpg")
+  li
+    // grid-column:1/2
+    padding-inline-start: 7rem
+    margin: 0%
+    color: white
+    width: 35%
+    text-align: left
+    list-style-type: none
+    @media(max-width: 500px)
+      width: 90%
+      text-align: center
+    p
+      padding: 2%
+      margin: 0%
+      font-size: 1.8rem
+      position: relative
+      width: 50%
+      @media(max-width: 500px)
+        font-size: 1.3rem
+    button
+      background-color: transparent
+      color: white
+      border: 2px solid white
+      padding: 2%
+      font-weight: 600
+      margin: 2%
+      ont-size: 3rem !important
+      font-family: inherit
+    ol
+      // grid-row: 1
+      // grid-column:2/3
+      display: flex
+      flex-direction: row
+      position: absolute
+      right: 0%
+      li

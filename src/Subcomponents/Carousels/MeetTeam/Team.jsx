@@ -69,7 +69,7 @@ function Team() {
         <Slider {...settings}>
           {slide.map((item) => (
             <div className="slide" id="card" >
-              <img src={item.imgUrl} />
+              <img src={item.imageUrl} />
               <h3>{item.name}</h3>
               <p>{item.position}</p>
             </div>

@@ -1,4 +1,4 @@
-import React, { useState ,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 // import picture from '../Assets/images/gdsc_logo.png'
@@ -13,8 +13,8 @@ import Logo from '../../Subcomponents/GDSClogo/Logo';
 function Header() {
 
   function getWindowSize() {
-    const {innerWidth} = window;
-    return {innerWidth};
+    const { innerWidth } = window;
+    return { innerWidth };
   }
 
   const [windowSize, setWindowSize] = useState(getWindowSize());
@@ -31,7 +31,7 @@ function Header() {
     };
   }, []);
 
-  // console.log(windowSize)
+  console.log(windowSize)
 
   // const [check,checked]= useState()
   const scroll = () => {
@@ -42,24 +42,28 @@ function Header() {
 
   return (
     <div className="G-H">
-      <div className="G-H-L">
-        <Logo width={windowSize} />
-      </div>
       <div className="G-H-N">
-        <li> <Link to='/'>Home</Link> </li>
-        <li> <Link to='/about' >About</Link> </li>
-        <li>
-           <Link to='/UpcomingEvents'>Events</Link>
-          {/* <ol className="G-H-N-DROP-Container">
+        <ol>
+          <li> <Link to='/'>Home</Link> </li>
+          <li> <Link to='/about' >About</Link> </li>
+          <li>
+            <Link to='/UpcomingEvents'>Events</Link>
+            {/* <ol className="G-H-N-DROP-Container">
             <li><Link to="/UpcomingEvents" >Upcoming</Link></li>
             <li><Link to="/PastEvents"  >Past</Link></li>
           </ol> */}
-        </li>
-        <li> <Link to={"/about#card"} onClick={scroll} >Team</Link> </li>
-        <li> <Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link> </li>
-        <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
-      </div>
-      <div className="G-H-N-R">
+          </li>
+        </ol>
+        <div className="G-H-L">
+          <Logo width={windowSize} />
+        </div>
+        <ol>
+          <li> <Link to={"/about#card"} onClick={scroll} >Team</Link> </li>
+          <li> <Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link> </li>
+          <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
+        </ol>
+      </div>-
+      {/* <div className="G-H-N-R">
         <RxHamburgerMenu />
         <ol className='drop' >
           <li> <Link to='/'>Home</Link> </li>
@@ -68,7 +72,7 @@ function Header() {
           <li><Link to="/PastEvents"  >Past events</Link></li>
           <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
         </ol>
-      </div>
+      </div> */}
     </div>
   )
 }

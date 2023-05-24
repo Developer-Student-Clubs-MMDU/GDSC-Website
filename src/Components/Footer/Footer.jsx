@@ -54,7 +54,7 @@ function Footer() {
              </li>
           </ol>
       </div>
-      <div className="G-F-5">
+      {/* <div className="G-F-5">
         <p>Quick Links</p>
         <ul>
           <li>
@@ -64,7 +64,7 @@ function Footer() {
             <Link>Certificates</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </div>
   )
 }

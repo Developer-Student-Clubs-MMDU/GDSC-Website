@@ -6,18 +6,21 @@ import About from './About/About';
 // import Eventpage from './Events/Eventpage/Eventpage';
 import Home from './Home/Home';
 import EventDetails from './Events/eventDetails';
+import './Router.css'
 
 
 
 function Router() {
     return (
-        <Routes>
+        <div className='parent'>
+            <Routes>
             <Route path='/about' element={<About />} />
             <Route path='/' element={<Home />} />
             <Route path="/eventdetails/:id" element={<EventDetails/>} />
             <Route path="/PastEvents" element={<PastEventpage/>} />
             <Route path="/UpcomingEvents" element={<UpcomingEventpage/>} />
         </Routes>
+        </div>
     )
 }
 

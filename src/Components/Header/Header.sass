@@ -1,108 +1,146 @@
 .G-H
-    z-index: 5
-    // position: fixed 
-    width: 98%
+    z-index: 10
+    position: fixed
+    width: 100%
     display: flex
     height: 10vh
     align-items: center
-    padding-left: 2%
-    padding-right: 2%
+    // padding-left: 2%
+    // padding-right: 2%
     background-color: white
     // box-shadow: 0px  1px 5px #D7DCE2
-    .G-H-L
-
-        width: -moz-fit-content
-        width: fit-content
-        margin-right: auto
+    .G-H-N
+        // width: -moz-fit-content
+        // width: fit-content
+        width: 100%
+        list-style-type: none
+        display: flex
+        margin: 0%
+        padding: 0% 7%
+        font-weight: 500
+        // padding-inline-end: 2%
+        // justify-content: space-around
+        align-items: center
+        // padding-right: 2%
+        font-size: 1.2rem
+        .G-H-L
+            // width: -moz-fit-content
+            // width: fit-content
+            margin: auto
         img
             width: 370px
             @media(max-width: 500px)
                 width: 60vw
-    .G-H-N
-        width: -moz-fit-content
-        width: fit-content
-        list-style-type: none
-        display: flex
-        margin: 0%
-        padding: 0%
-        // padding-inline-end: 2%
-        justify-content: space-around
-        align-items: center
-        padding-right: 2%
-        font-size: 1.2rem
-        @media(max-width: 850px)
-            display: none
-        .G-H-N-DROP-Container
-            display: none
-        li
-            padding-left: 2vw
-            &:hover
-                    .G-H-N-DROP-Container
-                        display: block
-            ol
-                position: absolute
-                background-color: white
-                list-style-type: none
-                top: 4%
-                padding-left: 0%
-                padding: 2% 1% 1% 1%
-                li
-                    padding-left: 0%
-                    text-align: left
-                    padding-top: 3%
-                    a
-                
-            a
-                color: #404040
-                text-decoration: none
-                &:hover
-                    color: #4285F4
-                &:active
-                    color: #4285F4
-    .G-H-N-R
-        display: none
-        @media(max-width: 850px)
-            display: block
-        &:hover
-            .drop
-                transform: translateX(-95%)
-
-        .drop
-            right: -35%
-            transition: all 0.5s ease-out
-            @media(max-width: 500px)
-                right: -73%
-                transition: all 0.5s ease-out
-
-        svg
-            margin: 2%
-            width: 100px
-            transform: scale(1.7)
-
         ol
-            width: 30%
-            height: 100%
-            z-index: 1
-            top: 3%
-            position: absolute
-            // right: 0.1%
-            background: white
-            padding: 2%
             list-style-type: none
+            padding: 0% !important
+            margin: 0% !important
             display: flex
-            flex-direction: column
-            // justify-content: space-evenly
-            font-size: 1.7rem
-            // display: none
-            @media(max-width: 500px)
-                width: 60%
-                padding:6%
-
+            width: 30%
+            justify-content: space-evenly
             li
-                padding: 7%
                 a
                     text-decoration: none
                     color: black
-                &:hover
-                    border-bottom: 2px solid #4285f4
-                    color: #4285f4
+                // padding: 2% 15%
+        // ul 
+        //     list-style-type: none
+        //     display: flex
+        //     align-items: space-evenly
+            
+        //     li
+        //         padding: 2% 15%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // @media(max-width: 850px)
+        //     display: none
+        // .G-H-N-DROP-Container
+        //     display: none
+        // li
+        //     padding-left: 2vw
+        //     &:hover
+        //             .G-H-N-DROP-Container
+        //                 display: block
+        //    ol
+        //         position: absolute
+        //         background-color: white
+        //         list-style-type: none
+        //         top: 4%
+        //         padding-left: 0%
+        //         padding: 2% 1% 1% 1%
+        //         li
+        //             padding-left: 0%
+        //             text-align: left
+        //             padding-top: 3%
+        //             a
+
+        //     a
+        //         color: #404040
+        //         text-decoration: none
+        //         &:hover
+        //             color: #4285F4
+        //         &:active
+        //             color: #4285F4
+
+    // ----------------------------responsive css ----------------------------------------
+    // .G-H-N-R
+    //     display: none
+    //     @media(max-width: 850px)
+    //         display: block
+    //     &:hover
+    //         .drop
+    //             transform: translateX(-95%)
+
+    //     .drop
+    //         right: -35%
+    //         transition: all 0.5s ease-out
+    //         @media(max-width: 500px)
+    //             right: -73%
+    //             transition: all 0.5s ease-out
+
+    //     svg
+    //         margin: 2%
+    //         width: 100px
+    //         transform: scale(1.7)
+
+    //     ol
+    //         width: 30%
+    //         height: 100%
+    //         z-index: 1
+    //         top: 3%
+    //         position: absolute
+    //         // right: 0.1%
+    //         background: white
+    //         padding: 2%
+    //         list-style-type: none
+    //         display: flex
+    //         flex-direction: column
+    //         // justify-content: space-evenly
+    //         font-size: 1.7rem
+    //         // display: none
+    //         @media(max-width: 500px)
+    //             width: 60%
+    //             padding:6%
+
+    //         li
+    //             padding: 7%
+    //             a
+    //                 text-decoration: none
+    //                 color: black
+    //             &:hover
+    //                 border-bottom: 2px solid #4285f4
+    //                 color: #4285f4
