@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from './Carousel'
-// import './Collab.sass'
+// import "./Collab.sass";
 import "./Carousel.sass";
 
 
@@ -22,8 +22,12 @@ function Collab() {
         //   </section>
         // </div>
         <div className="H-Sc-Container">
-          <h1>Our Collaborators</h1>
-          <p>GDSC has been honored to partner up with these Organisations</p>
+          <h1 style={{
+            // fontSize:'rem',
+          }} >Our Collaborators</h1>
+          <p style={{
+            fontSize: '2rem',
+          }} >GDSC has been honored to partner up with these Organisations</p>
         <Carousel/>
         </div>
       )
