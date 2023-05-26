@@ -13,12 +13,14 @@
 }
 @media (max-width: 800px) {
   .H-SC-Container .H-SC-Header {
-    height: 300px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media (max-width: 500px) {
   .H-SC-Container .H-SC-Header {
-    height: 150px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 .H-SC-Container .H-SC-Header h3 {
@@ -36,7 +38,7 @@
 }
 .H-SC-Container .H-SC-Header h1 {
   font-size: 3rem;
-  margin: 3rem;
+  margin: 3%;
 }
 @media (max-width: 800px) {
   .H-SC-Container .H-SC-Header h1 {
