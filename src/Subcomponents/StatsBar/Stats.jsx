@@ -12,7 +12,6 @@ function Stats() {
 
   return (
     <div className="H-Sc-C" id="H-Sc-C">
-        <div className="contain">
         {/* <h3>OUR STATS</h3> */}
         {/* <h1>WE ARE GDSC</h1> */}
         <h1>Community Insights</h1>
@@ -37,7 +36,6 @@ function Stats() {
             </tr>
         </table>
         </div>
-    </div>
   )
 }
 

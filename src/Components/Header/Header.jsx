@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-
-// import picture from '../Assets/images/gdsc_logo.png'
 import { HashLink } from 'react-router-hash-link';
-import { RxHamburgerMenu } from 'react-icons/rx';
 import './Header.sass'
 import Logo from '../../Subcomponents/GDSClogo/Logo';
-// import Dropdown from '../../Subcomponents/NavDrop/Dropdown';
-
+import { RxHamburgerMenu } from 'react-icons/rx';
+import {RxCross2} from 'react-icons/rx';
 
 
 function Header() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
 
   function getWindowSize() {
     const { innerWidth } = window;
@@ -39,42 +43,117 @@ function Header() {
       window.scrollTo({ top: 1200, left: 0, behavior: "smooth" })
     }, 80)
   }
-
-  return (
-    <div className="G-H">
-      <div className="G-H-N">
-        <ol>
-          <li> <Link to='/'>Home</Link> </li>
-          <li> <Link to='/about' >About</Link> </li>
-          <li>
-            <Link to='/UpcomingEvents'>Events</Link>
-            {/* <ol className="G-H-N-DROP-Container">
-            <li><Link to="/UpcomingEvents" >Upcoming</Link></li>
-            <li><Link to="/PastEvents"  >Past</Link></li>
-          </ol> */}
-          </li>
-        </ol>
-        <div className="G-H-L">
-          <Logo width={windowSize} />
+  {
+    if (windowSize.innerWidth > 1400) {
+      return (
+        <div className="G-H">
+          <div className="G-H-N">
+            <ol>
+              <li> <Link to='/'>Home</Link> </li>
+              <li> <Link to='/about' >About</Link> </li>
+              <li>
+                <Link to='/UpcomingEvents'>Events</Link></li>
+            </ol>
+            <div className="G-H-L">
+              <Logo width={windowSize} />
+            </div>
+            <ol>
+              <li> <Link to={"/about#card"} onClick={scroll} >Team</Link> </li>
+              <li> <Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link> </li>
+              <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
+            </ol>
+          </div>
         </div>
-        <ol>
-          <li> <Link to={"/about#card"} onClick={scroll} >Team</Link> </li>
-          <li> <Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link> </li>
-          <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
-        </ol>
-      </div>-
-      {/* <div className="G-H-N-R">
-        <RxHamburgerMenu />
-        <ol className='drop' >
-          <li> <Link to='/'>Home</Link> </li>
-          <li> <Link to='/about' >About</Link> </li>
-          <li><Link to="/UpcomingEvents" >Upcoming events</Link></li>
-          <li><Link to="/PastEvents"  >Past events</Link></li>
-          <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
-        </ol>
-      </div> */}
-    </div>
-  )
+      )
+    }
+    else {
+      return (
+        <div className="G-H-N-R"> 
+          <div className="G-H-L">
+              <Logo width={windowSize} />
+            </div>
+            
+      <input
+        type="checkbox"
+        id="toggle"
+        checked={isOpen}
+        onChange={handleToggle}
+      />
+      <label htmlFor="toggle" className="button-toggle">
+        {isOpen? <RxCross2/> :<RxHamburgerMenu />}
+      </label>
+      <nav className="nav">
+      <li> <Link  className='nav-item'  to='/'>Home</Link> </li>
+          <li> <Link  className='nav-item'  to='/about' >About</Link> </li>
+          <li><Link to='/UpcomingEvents'>Events</Link></li>
+          <li><Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link></li>
+          <li> <HashLink className='nav-item' to={"#G-F-3"} >Contact</HashLink> </li>
+      </nav>
+            <style jsx>{`
+              .G-H-N-R{
+                display:grid;
+                grid-template-columns: 3fr 1fr;
+                position:fixed;
+                width:100%;
+                height: fit-content;
+                background-color:white;
+                align-items: center;
+                z-index:100;
+                
+              }
+              .G-H-L{
+                margin-right:auto;
+                padding:2%;
+                grid-column: 1/2;
+              }
+              .hamhamburger-menu{
+                overflow:hidden;
+                grid-column: 2/3;
+                grid-row: 1/3;
+            }
+            #toggle , .button-toggle{
+                float:left;
+                width:100%;
+                text-align:center;
+            }
+            .button-toggle{
+                padding:2%;
+            }
+            #toggle{
+                display:inline;
+                position:absolute;
+                opacity:0;
+            }
+            svg{
+              font-size:2rem;
+              float:right;
+              padding-right:10%;
+            }
+            nav{
+                display: ${isOpen? 'block' : "none"};
+                list-style-type:none;
+                text-align:left;
+                padding:3%;
+                background-color:white;
+                width:100%;
+                z-index:10;
+            }
+            li{
+              padding:1%;
+            }
+            a{
+              text-decoration:none;
+              color:black;
+              font-size:1.5rem;
+            }
+            a:hover{
+              color:#3897f0;
+            }
+            `}</style>
+        </div>   
+      )
+    }
+  }
 }
 
 export default Header

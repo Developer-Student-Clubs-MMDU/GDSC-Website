@@ -43,11 +43,34 @@
   margin: auto !important;
   width: 80%;
 }
+.E-SC-container .E-SC-1 .E-SC-1-2 table .read {
+  margin-right: 0%;
+}
+.E-SC-container .E-SC-1 .E-SC-1-2 table .read td {
+  text-align: right !important;
+  color: #bababa;
+}
 .E-SC-container .E-SC-1 .E-SC-1-2 table tr td {
   text-align: left;
   font-size: 1rem;
   font-weight: 400;
   color: #404040;
+}
+.E-SC-container .E-SC-1 .E-SC-1-2 table tr .lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 2%;
+}
+.E-SC-container .E-SC-1 .E-SC-1-2 table tr li {
+  list-style: none;
+  color: grey;
+  text-align: right !important;
+}
+.E-SC-container .E-SC-1 .E-SC-1-2 table tr li a {
+  text-decoration: none;
+  color: grey;
 }
 .E-SC-container .E-SC-1 .E-SC-1-2 table tr #head {
   font-size: 1.4rem;

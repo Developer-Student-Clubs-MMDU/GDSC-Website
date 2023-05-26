@@ -4,16 +4,22 @@ import picture from '../../Assets/images/gdsc_logo.png'
 
 function Logo({width}) {
   {
-    if(width.innerWidth>500){
+    if(width.innerWidth>960){
         return(
             <>
-            <img src={image} alt="" />
+            <img src={image} alt=""  />
+            <style jsx>{`
+              img{
+                width: 30vw;
+              }
+              @media
+            `}</style>
             </>
             )
     }else{
         return(
             <>
-            <img src={picture} alt="" style={{width : 100}} />
+            <img src={picture} alt="" style={{width : 80}} />
             </>
         )
     }

@@ -1,0 +1,56 @@
+.H-Container {
+  width: 100vw;
+  height: 90vh;
+  font-weight: 500;
+  background-position: 20% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url("../../Assets/images/landing.jpg");
+}
+.H-Container li {
+  -webkit-padding-start: 7rem;
+          padding-inline-start: 7rem;
+  margin: 0%;
+  color: white;
+  width: 35%;
+  text-align: left;
+  list-style-type: none;
+}
+@media (max-width: 500px) {
+  .H-Container li {
+    width: 90%;
+    text-align: center;
+  }
+}
+.H-Container li p {
+  padding: 2%;
+  margin: 0%;
+  font-size: 1.8rem;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .H-Container li p {
+    font-size: 1.3rem;
+  }
+}
+.H-Container li button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 2%;
+  font-weight: 600;
+  margin: 2%;
+  ont-size: 3rem !important;
+  font-family: inherit;
+}
+.H-Container li ol {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 0%;
+}/*# sourceMappingURL=Home.css.map */

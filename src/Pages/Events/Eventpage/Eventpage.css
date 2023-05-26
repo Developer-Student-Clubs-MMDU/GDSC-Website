@@ -3,7 +3,6 @@
 }
 .E-container .E-1 {
   height: 30vh;
-  background-image: url(../../../Assets/images/green_banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -13,6 +12,12 @@
 .E-container .E-1 h1 {
   color: white;
   font-size: 8vh;
+}
+.E-container .yellow {
+  background-image: url(../../../Assets/images/yellow_banner.png);
+}
+.E-container .green {
+  background-image: url(../../../Assets/images/green_banner.png);
 }
 .E-container .E-2 {
   list-style-type: none;
@@ -72,12 +77,6 @@
   font: inherit;
   font-size: 1rem;
   font-weight: 100;
-}
-.E-container .E-2 .E-2-2 li:focus, .E-container .E-2 .E-2-2 li input:hover {
-  outline: none;
-  border-color: #A5D5A7;
-  background-color: #fff;
-  box-shadow: 0 0 0 4px #E8F5E9;
 }
 .E-container .E-2 .E-2-2 li svg {
   fill: #676C72;

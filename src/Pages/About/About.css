@@ -85,10 +85,9 @@
   position: relative;
   top: 20%;
 }
-.A-Container .A-4 {
-  display: grid;
-  -webkit-padding-start: 4rem;
-          padding-inline-start: 4rem;
+.A-Container .A-4 .A-4-1 h1 {
+  color: #4285F4;
+  font-size: 2.9rem;
 }
 .A-Container .red {
   background: linear-gradient(rgb(239, 83, 80) 40%, rgb(255, 255, 255) 30%);

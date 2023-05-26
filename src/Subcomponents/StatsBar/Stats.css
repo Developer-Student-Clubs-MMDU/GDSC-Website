@@ -1,0 +1,45 @@
+.H-Sc-C {
+  margin: auto;
+  padding: 2%;
+  height: 60vh;
+  background-color: #d2d2d2;
+}
+.H-Sc-C .contain {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.H-Sc-C .contain h3 {
+  letter-spacing: 0.4rem;
+  margin-bottom: 0.1%;
+}
+.H-Sc-C .contain h1 {
+  font-size: 3rem;
+  letter-spacing: 0.6rem;
+  color: #404040;
+  margin-top: 0%;
+}
+.H-Sc-C .contain table {
+  margin: auto;
+  width: 95vw;
+  border-collapse: collapse;
+}
+.H-Sc-C .contain table tr {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.H-Sc-C .contain table tr td li {
+  line-height: 5rem;
+  list-style: none;
+}
+.H-Sc-C .contain table tr td li:nth-child(1) {
+  font-size: 5rem;
+  color: white;
+  font-weight: 700;
+}
+.H-Sc-C .contain table tr td li:nth-child(2) {
+  font-size: 1.5rem;
+  color: #404040;
+}/*# sourceMappingURL=Stats.css.map */

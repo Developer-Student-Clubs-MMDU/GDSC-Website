@@ -1,0 +1,27 @@
+.tag {
+  margin-bottom: 7%;
+  margin-top: 4%;
+}
+@media (max-width: 600px) {
+  .tag {
+    margin-bottom: 15%;
+    margin-top: 7%;
+  }
+}
+.tag .imgslider {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tag .imgslider .slide {
+  width: 160px !important;
+}
+@media (max-width: 600px) {
+  .tag .imgslider .slide {
+    width: 110px !important;
+    outline-width: 0px;
+  }
+}
+.tag .imgslider .slide img {
+  width: 100%;
+}/*# sourceMappingURL=Carousel.css.map */
