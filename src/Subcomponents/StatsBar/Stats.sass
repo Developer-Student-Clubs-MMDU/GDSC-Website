@@ -11,6 +11,11 @@
       letter-spacing: 0.6rem
       color: #404040
       margin-top: 0%
+      @media(max-width: 450px)
+        font-size: 2rem
+        letter-spacing: 0.3rem
+      @media(max-width: 300px)
+        font-size: 1.5rem
     table
 
       // background: red
@@ -22,17 +27,28 @@
           padding: 2%
           display: grid
           // grid-template-columns: 1fr 1fr 1fr 1fr 
-          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+          gap: 15px
           td
               // border: 1px solid black
               li
                   line-height: 5rem
                   list-style: none
+                  @media(max-width: 720px)
+                    line-height: 3.5rem
+                  @media(max-width: 350px)
+                    line-height: 3rem
                   &:nth-child(1)
                       font-size: 5rem
                       color: white
                       font-weight: 700
+                      @media(max-width: 720px)
+                        font-size: 4rem
+                      @media(max-width: 420px)
+                        font-size: 3rem
                   &:nth-child(2)
                       font-size: 1.5rem
                       // color: red
                       color: #404040
+                      @media(max-width: 720px)
+                        font-size: 1rem
