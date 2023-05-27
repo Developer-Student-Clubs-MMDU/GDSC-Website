@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Collab.css"}
+{"version":3,"sources":["Collab.sass","Collab.css"],"names":[],"mappings":"AAAA;EACI,iBAAA;ACCJ;ADCI;EACI,gBAAA;EACA,cAAA;EAEA,gBAAA;ACAR;ADCI;EACI,eAAA;EACA,gBAAA;ACCR;ADAQ;EAHJ;IAIQ,cAAA;ECGV;AACF","file":"Collab.css"}

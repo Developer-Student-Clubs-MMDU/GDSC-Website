@@ -1,5 +1,6 @@
 .tag {
   margin-bottom: 7%;
+  height: 50vh;
   margin-top: 4%;
 }
 @media (max-width: 600px) {
