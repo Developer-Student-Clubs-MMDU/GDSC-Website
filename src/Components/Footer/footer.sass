@@ -6,9 +6,9 @@
     background-color: #404040
     color: $white
     display: grid
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr
     font-size: 0.9rem
-    column-gap: 43%
+    // column-gap: 43%
     padding: 6% 4% 2% 4%
     position: relative
     font-size: 1.1rem
@@ -16,7 +16,7 @@
     @media(max-width: 1028px)
         font-size: 0.9rem !important
         padding: 7%
-        column-gap: 20%
+        // column-gap: 20%
         height: 30vh
     // @media(max-width: 600px)
     //         column-gap:10%
@@ -27,15 +27,21 @@
     @media(max-width: 700px)
         column-gap: 0%
         grid-template-columns: 1fr 
+    @media(max-height: 650px)
+        height: fit-content
     .G-F-1
         margin-left: 0%
+        // width: 100%
         margin-right: auto
         margin-bottom: 2rem
-        grid-column: 1/3
+        grid-column: 1/4
         grid-row: 1
+        // justify-self: center
+        align-self: start
         @media(max-width: 850px)
             margin: 0%
             padding-bottom: 7%
+            align-self: center
         img
             width: 25vw
             @media(max-width: 1028px)
@@ -127,11 +133,18 @@
                     text-align: left
 
     .G-F-4
-        padding: left 8%
+        display: inline
+        padding-left: 8%
         padding-top: 0%
+        height: fit-content
+        justify-self: end
+        width: 100%
+        align-self: end
+        grid-column: 3/4
         @media(max-width: 850px)
-            grid-column: 2
+            grid-column: 3/4
             grid-row: 2/4
+            height: 100% // dont u dare delete this line !! it makes grid row work in line 146 
         @media(max-width: 700px)
             grid-column: 1/3
             grid-row: 4
@@ -143,7 +156,7 @@
                 display: none
         ol
             list-style-type: none
-            width: 25vh
+            width: 100%
             display: flex
             justify-content: space-between
             margin: 0%
@@ -152,7 +165,8 @@
             @media(max-width: 850px)
                 margin-right: 0% !important
                 margin-left: auto !important
-                width: 50% !important
+                // width: 50% !important
+                row-gap: 10%
                 display: grid
                 grid-template-columns: 1fr 1fr
                 place-items: center
