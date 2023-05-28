@@ -1,11 +1,11 @@
 .H-Sc-C
     margin: auto
-    padding: 2%
+    padding: 4%
     height: fit-content
-    background-color: #d2d2d2
     h3
       letter-spacing: 0.4rem
-      margin-bottom: 0.1%
+      margin-bottom: 0.7%
+      margin-bottom: 2%
     h1
       font-size: 3rem
       letter-spacing: 0.6rem
@@ -16,21 +16,26 @@
         letter-spacing: 0.3rem
       @media(max-width: 300px)
         font-size: 1.5rem
+    p
+      font-size: 1.4rem
+      color: #5c5757
     table
-
       // background: red
       margin: auto
-      width: 95vw
+      width: 75vw
       // border: 1px solid black
       border-collapse: collapse
       tr
-          padding: 2%
+          padding: 5%
           display: grid
           // grid-template-columns: 1fr 1fr 1fr 1fr 
           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
           gap: 15px
           td
-              // border: 1px solid black
+              border-right: 2px solid #404040
+              &:last-child
+                border-right: none
+                
               li
                   line-height: 5rem
                   list-style: none
@@ -52,3 +57,10 @@
                       color: #404040
                       @media(max-width: 720px)
                         font-size: 1rem
+.insight
+  background-color: #d2d2d2
+#H-Sc
+  li
+    &:first-child
+      color: #d2d2d2
+      

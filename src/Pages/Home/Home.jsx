@@ -15,6 +15,18 @@ import { RiGithubLine} from 'react-icons/ri'
 
 export default function Home() {
 
+  var a = {
+    events: 120,
+    collab:34,
+    footfall:23,
+    prizes: 24
+}
+var b = {
+  workshops : 10,
+  seminars : 12, 
+  Hackathons :3,
+}
+
   const scroll = () => {
     setTimeout(() => {
       window.scrollTo({ top: 2250, left: 0, behavior: "smooth" })
@@ -56,8 +68,9 @@ export default function Home() {
           </td>
         </li>
       </div>
+      <Stats data={b} component="intro"/>
+      <Stats data={a} component="insight"/>
       <Media />
-      <Stats />
       <Collab />
     </div>
   )

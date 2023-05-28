@@ -1,13 +1,13 @@
 .H-Sc-C {
   margin: auto;
-  padding: 2%;
+  padding: 4%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: #d2d2d2;
 }
 .H-Sc-C h3 {
   letter-spacing: 0.4rem;
-  margin-bottom: 0.1%;
+  margin-bottom: 0.7%;
+  margin-bottom: 2%;
 }
 .H-Sc-C h1 {
   font-size: 3rem;
@@ -26,16 +26,26 @@
     font-size: 1.5rem;
   }
 }
+.H-Sc-C p {
+  font-size: 1.4rem;
+  color: #5c5757;
+}
 .H-Sc-C table {
   margin: auto;
-  width: 95vw;
+  width: 75vw;
   border-collapse: collapse;
 }
 .H-Sc-C table tr {
-  padding: 2%;
+  padding: 5%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 15px;
+}
+.H-Sc-C table tr td {
+  border-right: 2px solid #404040;
+}
+.H-Sc-C table tr td:last-child {
+  border-right: none;
 }
 .H-Sc-C table tr td li {
   line-height: 5rem;
@@ -74,4 +84,12 @@
   .H-Sc-C table tr td li:nth-child(2) {
     font-size: 1rem;
   }
+}
+
+.insight {
+  background-color: #d2d2d2;
+}
+
+#H-Sc li:first-child {
+  color: #d2d2d2;
 }/*# sourceMappingURL=Stats.css.map */
