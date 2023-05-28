@@ -3,7 +3,7 @@ import "./Stats.sass";
 
 function Stats({data,component}) {
 
-    
+
 
   {
     if(component == "intro"){
@@ -33,14 +33,8 @@ function Stats({data,component}) {
                         </td> */}
                     </tr>
                 </table>
-                <style jsx>{`
-                    li{
-                        color:red;
-                    }
-                `}
-                </style>
                 </div>
-          )
+            )
     }else{
         return (
             <div className="H-Sc-C insight" id="H-Sc-C">
