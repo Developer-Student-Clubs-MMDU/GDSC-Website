@@ -8,7 +8,7 @@ import "./Carousel.sass";
 function Collab() {
   return (
     <div className="H-Sc-Container" >
-      <h1>Our Collaborators</h1>
+      <h1>Community Allies</h1>
       {/* <p>GDSC has been honored to partner up with these Organisations</p> */}
       <Carousel />
       <style jsx>{`

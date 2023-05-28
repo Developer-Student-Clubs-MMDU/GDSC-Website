@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import React from 'react'
 import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
+import './Carousel.sass'
 
 function Carousel() {
 

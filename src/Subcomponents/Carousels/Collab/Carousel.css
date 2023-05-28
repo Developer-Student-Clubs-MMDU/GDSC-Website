@@ -1,7 +1,8 @@
 .tag {
   margin-bottom: 7%;
-  height: 50vh;
   margin-top: 4%;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (max-width: 600px) {
   .tag {
@@ -10,19 +11,29 @@
   }
 }
 .tag .imgslider {
-  width: 70%;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
   margin-left: auto;
   margin-right: auto;
 }
 .tag .imgslider .slide {
-  width: 160px !important;
+  width: -moz-fit-content;
+  width: fit-content !important;
+  width: -moz-fit-content;
+  -o-object-fit: contain;
+     object-fit: contain;
+  text-align: center;
 }
 @media (max-width: 600px) {
   .tag .imgslider .slide {
-    width: 110px !important;
     outline-width: 0px;
+    text-align: center;
   }
 }
 .tag .imgslider .slide img {
   width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }/*# sourceMappingURL=Carousel.css.map */
