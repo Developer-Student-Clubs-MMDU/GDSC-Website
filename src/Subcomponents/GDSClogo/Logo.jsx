@@ -10,16 +10,20 @@ function Logo({width}) {
             <img src={image} alt=""  />
             <style jsx>{`
               img{
-                width: 30vw;
+                width: 300px;
               }
-              @media
             `}</style>
             </>
             )
     }else{
         return(
             <>
-            <img src={picture} alt="" style={{width : 80}} />
+            <img src={picture} alt=""  />
+            <style jsx>{`
+              img{
+                width: 60px;
+              }
+            `}</style>
             </>
         )
     }
