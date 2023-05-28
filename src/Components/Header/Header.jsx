@@ -94,8 +94,8 @@ function Header() {
                 display:grid;
                 grid-template-columns: 3fr 1fr;
                 position:fixed;
-                width:100%;
-                height: fit-content;
+                width:100vw;
+                height: 90px;
                 background-color:white;
                 align-items: center;
                 z-index:100;
@@ -123,6 +123,7 @@ function Header() {
                 display:inline;
                 position:absolute;
                 opacity:0;
+                width:0.1px;
             }
             svg{
               font-size:2rem;
@@ -135,6 +136,7 @@ function Header() {
                 text-align:left;
                 padding:3%;
                 background-color:white;
+                grid-column: 1/3;
                 width:100%;
                 z-index:10;
             }
