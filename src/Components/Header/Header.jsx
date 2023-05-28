@@ -5,6 +5,9 @@ import './Header.sass'
 import Logo from '../../Subcomponents/GDSClogo/Logo';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import {RxCross2} from 'react-icons/rx';
+import { GrInstagram } from 'react-icons/gr'
+import { FiTwitter } from 'react-icons/fi'
+import { TbBrandDiscord } from 'react-icons/tb'
 
 
 function Header() {
@@ -88,6 +91,26 @@ function Header() {
           <li><Link to='/UpcomingEvents'>Events</Link></li>
           <li><Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link></li>
           <li> <HashLink className='nav-item' to={"#G-F-3"} >Contact</HashLink> </li>
+          {/* <li className='social'>
+          <td>
+            <Link><GrInstagram/></Link>
+          </td>
+          <td>
+            <Link><FiTwitter/></Link>
+          </td>
+          <td>
+            <Link><TbBrandDiscord/></Link>
+          </td>
+          <td>
+            <Link><AiFillInstagram/></Link>
+          </td>
+          <td>
+            <Link><AiFillInstagram/></Link>
+          </td>
+          <td>
+            <Link><AiFillInstagram/></Link>
+          </td>
+        </li> */}
       </nav>
             <style jsx>{`
               .G-H-N-R{
