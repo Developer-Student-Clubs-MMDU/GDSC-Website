@@ -7,6 +7,7 @@ import About from './About/About';
 import Home from './Home/Home';
 import EventDetails from './Events/eventDetails';
 import './Router.css'
+import AboutTeam from './AboutTeam/AboutTeam';
 
 
 
@@ -19,6 +20,7 @@ function Router() {
             <Route path="/eventdetails/:id" element={<EventDetails/>} />
             <Route path="/PastEvents" element={<PastEventpage/>} />
             <Route path="/UpcomingEvents" element={<UpcomingEventpage/>} />
+            <Route path="/AboutTeam" element={<AboutTeam/>} />
         </Routes>
         </div>
     )
