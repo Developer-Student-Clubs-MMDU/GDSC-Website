@@ -31,8 +31,10 @@
           // grid-template-columns: 1fr 1fr 1fr 1fr 
           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
           gap: 15px
-          td
+          td  
               border-right: 2px solid #404040
+              @media(max-width: 1200px)
+                border-right: none
               &:last-child
                 border-right: none
                 
@@ -62,27 +64,34 @@
 #H-Sc
     padding: 0%
     padding-top:3%
+    padding-bottom:3%
     table
       width: 100vw
-      display: inline-flex
-      justify-content: center
       tr
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+        row-gap: 20px
+        justify-content: center
         margin: auto
         width: 100%
-        padding-top: 2%
-        gap: 0px
+        padding: 2%  0%
         td
-          
+          display: flex
+          flex-direction: column
+          align-items: center
           // height:-moz-fit-content
           // height: fit-content
           padding: 0% 10%
           li
-            height:-moz-fit-content
+            width: -moz-fit-content
+            width: fit-content
+            height: -moz-fit-content
             height: fit-content
+            line-height: 2rem
             &:first-child
               color: #d2d2d2
               font-size: 2rem
               font-weight: 700
+              padding-bottom: 8%
             &:last-child
               font-size: 0.9rem
               line-height: 1.3rem

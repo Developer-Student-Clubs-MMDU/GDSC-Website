@@ -2,10 +2,7 @@ import React from 'react'
 import "./Stats.sass";
 
 function Stats({data,component}) {
-
-
-
-  {
+{
     if(component == "intro"){
         return (
             <div className=" intro H-Sc-C " id="H-Sc">
