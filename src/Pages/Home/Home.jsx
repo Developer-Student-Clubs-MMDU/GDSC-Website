@@ -24,10 +24,10 @@ export default function Home() {
     prizes: <CountUp end={24} />
 }
 var b = {
-  workshops : "Our interactive workshops equip Indian university students with practical skills and knowledge in various technical domains, empowering them to thrive in the ever-evolving world of technology.",
-  seminars : "Our insightful seminars, organized under Google Developer Student Clubs, invite industry experts to share their expertise, empowering Indian students to stay updated with the latest tech trends and advancements.", 
-  Hackathons :"Our exhilarating hackathons provide a platform for university-level students in India to showcase their skills, collaborate, and build remarkable prototypes within a limited timeframe.",
-  open:" We collaborate with developers worldwide, enhancing software and creating innovative solutions for the Indian tech community.",
+  workshops : "Our interactive workshops equip  university students with practical skills and knowledge in various technical domains, empowering them to thrive in the ever-evolving world of technology.",
+  seminars : "Our insightful seminars, organized under Google Developer Student Clubs, invite industry experts to share their expertise, empowering students to stay updated with the latest tech trends and advancements.", 
+  Hackathons :"Our exhilarating hackathons provide a platform for university-level students to showcase their skills, collaborate, and build remarkable prototypes within a limited timeframe.",
+  open:" We collaborate with developers worldwide, enhancing software and creating innovative solutions for the tech community.",
 }
 
   const scroll = () => {
