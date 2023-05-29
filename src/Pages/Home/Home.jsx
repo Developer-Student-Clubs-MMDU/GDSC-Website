@@ -11,15 +11,17 @@ import { RxDiscordLogo} from 'react-icons/rx'
 import { RiYoutubeLine} from 'react-icons/ri'
 import { SlSocialLinkedin} from 'react-icons/sl'
 import { RiGithubLine} from 'react-icons/ri'
+import CountUp from 'react-countup';
+
 
 
 export default function Home() {
 
   var a = {
-    events: 120,
-    collab:34,
-    footfall:23,
-    prizes: 24
+    events: <CountUp end={120} />,
+    collab:<CountUp end={34} />,
+    footfall:<CountUp end={2000} />,
+    prizes: <CountUp end={24} />
 }
 var b = {
   workshops : "Our interactive workshops equip Indian university students with practical skills and knowledge in various technical domains, empowering them to thrive in the ever-evolving world of technology.",

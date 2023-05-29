@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Stats.sass";
 
+
 function Stats({data,component}) {
 {
     if(component == "intro"){
@@ -9,7 +10,7 @@ function Stats({data,component}) {
                 <h3>HELLO THERE </h3>
                 <h1>WE ARE GDSC(MMDU)</h1>
                 {/* <h1>Community Insights</h1> */}
-                <p>We are a community of student developers passionate about technologies. </p>
+                <p>We are a community of student developers passionate about technologies. <br></br>We organizes workshops, coding competitions, and seminars to foster learning and collaboration among developers. </p>
                 <table>
                     <tr>
                         <td>
@@ -21,6 +22,8 @@ function Stats({data,component}) {
                             <li>Hackathons</li>
                             <li>{data.Hackathons}</li>
                         </td>
+                        </tr>
+                        <tr>
                         <td>
                             
                             <li>Workshops</li>
