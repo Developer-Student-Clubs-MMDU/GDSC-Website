@@ -8,7 +8,7 @@ function Stats({data,component}) {
         return (
             <div className=" intro H-Sc-C " id="H-Sc">
                 <h3>HELLO THERE </h3>
-                <h1>WE ARE GDSC(MM(DU))</h1>
+                <h1>WE ARE GDSC MM(DU)</h1>
                 {/* <h1>Community Insights</h1> */}
                 <p>We are a community of student developers passionate about technologies. <br></br>We organizes workshops, coding competitions, and seminars to foster learning and collaboration among developers. </p>
                 <table>
