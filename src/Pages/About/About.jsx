@@ -30,9 +30,9 @@ function About() {
             </div>
             <div className="A-2">
                 <div className="A-2-1" >
-                    <p>GDSC MMDU (Google Developer Student Clubs Maharishi Markandeshwar Deemed to be University) is a community of students who are passionate about technology and innovation. The club is a part of the Google Developer Student Clubs program, which is a global initiative by Google to provide students with the opportunity to learn and develop their technical skills.
+                    <p>GDSC MM(DU) (Google Developer Student Clubs Maharishi Markandeshwar Deemed to be University) is a community of students who are passionate about technology and innovation. The club is a part of the Google Developer Student Clubs program, which is a global initiative by Google to provide students with the opportunity to learn and develop their technical skills.
                     </p>
-                    <p>GDSC MMDU aims to provide a platform for students to learn, share, and collaborate on various projects and activities related to technology. The club hosts various events such as hackathons, coding competitions, tech talks, and workshops, which help students to explore new technologies and gain practical experience.</p>
+                    <p>GDSC MM(DU) aims to provide a platform for students to learn, share, and collaborate on various projects and activities related to technology. The club hosts various events such as hackathons, coding competitions, tech talks, and workshops, which help students to explore new technologies and gain practical experience.</p>
                 </div>
                 <div className="A-2-2">
                     <img src={Image} alt="" />

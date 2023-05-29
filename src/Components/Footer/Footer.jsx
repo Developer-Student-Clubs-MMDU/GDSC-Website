@@ -24,7 +24,7 @@ function Footer() {
         <ol>
           <li><span class="material-symbols-outlined">
             mail
-          </span><p> mmdu.dsc@gmail.com </p></li>
+          </span><p> MM(DU).dsc@gmail.com </p></li>
           {/* <li>
             <span class="material-symbols-outlined">
               call
@@ -35,7 +35,7 @@ function Footer() {
             <span class="material-symbols-outlined">
               location_on
             </span>
-            <p>MM Education Complex, MMDU , Mullana ( Ambala ), Mullana, Haryana, India, 133207</p>
+            <p>MM Education Complex, MM(DU) , Mullana ( Ambala ), Mullana, Haryana, India, 133207</p>
           </li>
         </ol>
       </div>
