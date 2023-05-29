@@ -61,7 +61,7 @@ function Header() {
               <Logo width={windowSize} />
             </div>
             <ol>
-              <li> <Link to={"/about#card"} onClick={scroll} >Team</Link> </li>
+            <li> <Link to='/AboutTeam' >About</Link> </li>
               <li> <Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link> </li>
               <li> <HashLink to={"#G-F-3"} >Contact</HashLink> </li>
             </ol>
