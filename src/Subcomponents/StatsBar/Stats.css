@@ -91,6 +91,35 @@
   background-color: #d2d2d2;
 }
 
-#H-Sc li:first-child {
+#H-Sc {
+  padding: 0%;
+  padding-top: 3%;
+}
+#H-Sc table {
+  width: 100vw;
+  display: inline-flex;
+  justify-content: center;
+}
+#H-Sc table tr {
+  margin: auto;
+  width: 100%;
+  padding-top: 2%;
+  gap: 0px;
+}
+#H-Sc table tr td {
+  padding: 0% 10%;
+}
+#H-Sc table tr td li {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+#H-Sc table tr td li:first-child {
   color: #d2d2d2;
+  font-size: 2rem;
+  font-weight: 700;
+}
+#H-Sc table tr td li:last-child {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  font-weight: 400;
 }/*# sourceMappingURL=Stats.css.map */

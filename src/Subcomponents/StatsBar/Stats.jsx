@@ -16,21 +16,24 @@ function Stats({data,component}) {
                 <table>
                     <tr>
                         <td>
-                            <li>{data.seminars}</li>
                             <li>Seminars</li>
+                            <li>{data.seminars}</li>
                         </td>
                         <td>
-                            <li>{data.Hackathons}</li>
+                            
                             <li>Hackathons</li>
+                            <li>{data.Hackathons}</li>
                         </td>
                         <td>
-                            <li>{data.workshops}</li>
+                            
                             <li>Workshops</li>
+                            <li>{data.workshops}</li>
                         </td>
-                        {/* <td>
-                            <li>{data.prizes}</li>
-                            <li>Prizes Earned</li>
-                        </td> */}
+                        <td>
+                            
+                            <li>Open Source</li>
+                            <li>{data.open}</li>
+                        </td>
                     </tr>
                 </table>
                 </div>
