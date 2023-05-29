@@ -85,7 +85,8 @@ export default Team
 
 
 const a = {
-  batch: "2021-22",
+  batch: "2022-23",
+
 
   member: [
     {
