@@ -99,7 +99,7 @@ function Header() {
                 grid-template-columns: 3fr 1fr;
                 position:fixed;
                 width:100vw;
-                height: 91px;
+                height: 93px;
                 background-color:white;
                 align-items: center;
                 z-index:100;
