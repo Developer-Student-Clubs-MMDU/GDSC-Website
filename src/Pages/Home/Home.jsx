@@ -12,15 +12,41 @@ import { RiYoutubeLine} from 'react-icons/ri'
 import { SlSocialLinkedin} from 'react-icons/sl'
 import { RiGithubLine} from 'react-icons/ri'
 import CountUp from 'react-countup';
+// import { db } from '../../Firebase'
+// import { collection, getDocs } from "firebase/firestore";
+// import { useEffect , useState} from 'react';
 
 
 
 export default function Home() {
 
+  // const [dta, setData] = useState(null);
+  
+  // useEffect(()=>{
+
+  //   const Fetch = async () => {
+  //     await getDocs(collection(db, "collabFootfalls"))
+  //       .then((querySnapshot) => {
+  //         const newData = querySnapshot.docs
+  //           .map((doc) => ({ ...doc.data(), id: doc.id }));  
+  //           // setData(newData.json()) 
+  //       })
+  //   }
+
+  //   Fetch()
+  //   .then((res)=>{
+  //      setData(res)
+       
+  //     // console.log(dta)
+  //   })
+
+  // })
+
+
   var a = {
     events: <CountUp end={120} />,
     collab:<CountUp end={34} />,
-    footfall:<CountUp end={2000} />,
+    footfall:<CountUp end={20} />,
     prizes: <CountUp end={24} />
 }
 var b = {
