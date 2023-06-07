@@ -91,34 +91,15 @@ function Header() {
           <li><Link to='/UpcomingEvents'>Events</Link></li>
           <li><Link to={"/#H-SC-Body"} onClick={scroll} >Work</Link></li>
           <li> <HashLink className='nav-item' to={"#G-F-3"} >Contact</HashLink> </li>
-          {/* <li className='social'>
-          <td>
-            <Link><GrInstagram/></Link>
-          </td>
-          <td>
-            <Link><FiTwitter/></Link>
-          </td>
-          <td>
-            <Link><TbBrandDiscord/></Link>
-          </td>
-          <td>
-            <Link><AiFillInstagram/></Link>
-          </td>
-          <td>
-            <Link><AiFillInstagram/></Link>
-          </td>
-          <td>
-            <Link><AiFillInstagram/></Link>
-          </td>
-        </li> */}
-      </nav>
+          <li><Link to="/AboutTeam" > Team </Link></li>  
+          </nav>
             <style jsx>{`
               .G-H-N-R{
                 display:grid;
                 grid-template-columns: 3fr 1fr;
                 position:fixed;
                 width:100vw;
-                height: 90px;
+                height: 91px;
                 background-color:white;
                 align-items: center;
                 z-index:100;
@@ -165,6 +146,7 @@ function Header() {
             }
             li{
               padding:1%;
+              font-size:0.6rem;
             }
             a{
               text-decoration:none;
