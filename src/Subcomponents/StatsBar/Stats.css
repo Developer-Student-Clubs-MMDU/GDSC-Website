@@ -28,7 +28,7 @@
 }
 .H-Sc-C p {
   font-size: 1.4rem;
-  color: #242323;
+  color: #5c5757;
 }
 .H-Sc-C table {
   margin: auto;
@@ -43,6 +43,11 @@
 }
 .H-Sc-C table tr td {
   border-right: 2px solid #404040;
+}
+@media (max-width: 1200px) {
+  .H-Sc-C table tr td {
+    border-right: none;
+  }
 }
 .H-Sc-C table tr td:last-child {
   border-right: none;
@@ -94,32 +99,40 @@
 #H-Sc {
   padding: 0%;
   padding-top: 3%;
+  padding-bottom: 3%;
 }
 #H-Sc table {
   width: 100vw;
-  display: inline-flex;
-  justify-content: center;
 }
 #H-Sc table tr {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 20px;
+  justify-content: center;
   margin: auto;
   width: 100%;
-  padding-top: 2%;
-  gap: 0px;
+  padding: 2% 0%;
 }
 #H-Sc table tr td {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0% 10%;
 }
 #H-Sc table tr td li {
+  width: -moz-fit-content;
+  width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  line-height: 2rem;
 }
 #H-Sc table tr td li:first-child {
-  color: #404040;
+  color: #d2d2d2;
   font-size: 2rem;
   font-weight: 700;
+  padding-bottom: 8%;
 }
 #H-Sc table tr td li:last-child {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.3rem;
   font-weight: 400;
 }/*# sourceMappingURL=Stats.css.map */

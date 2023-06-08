@@ -1,5 +1,6 @@
 .parent{
-    padding-top: 4%;
+    padding-top:40px;
+    /* padding: 0% 0% 0% 0% !important; */
     scroll-behavior: smooth;
     width: 100%;
 }

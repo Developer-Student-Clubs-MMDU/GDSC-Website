@@ -66,7 +66,7 @@ var b = {
     < div className='main'>
       <div className="H-Container"  >
         <li>
-          <p> <b>Google Developer Student Clubs</b> ,  Maharishi Markandeshwar (Deemed to be University)</p>
+          <p> Google Developer Student Clubs ,  Maharishi Markandeshwar (Deemed to be University)</p>
         </li>
         <li>
           <p>Empowering Tech Skills, Unleashing Innovation, Learning and Collaboration!</p>
@@ -100,7 +100,7 @@ var b = {
       <Stats data={b} component="intro"/>
       <Stats data={a} component="insight"/>
       <Media />
-      <Collab />
+      {/* <Collab /> */}
     </div>
   )
 }
