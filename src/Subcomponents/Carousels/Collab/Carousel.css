@@ -17,6 +17,7 @@
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
+  overflow: hidden;
 }
 .tag .imgslider .slide {
   width: -moz-fit-content;
