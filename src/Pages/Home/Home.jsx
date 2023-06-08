@@ -46,7 +46,7 @@ export default function Home() {
   var a = {
     events: <CountUp end={120} />,
     collab:<CountUp end={34} />,
-    footfall:<CountUp end={20} />,
+    footfall:<CountUp end={2300} />,
     prizes: <CountUp end={24} />
 }
 var b = {
@@ -100,7 +100,7 @@ var b = {
       <Stats data={b} component="intro"/>
       <Stats data={a} component="insight"/>
       <Media />
-      {/* <Collab /> */}
+      <Collab />
     </div>
   )
 }
