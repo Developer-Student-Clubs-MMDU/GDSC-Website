@@ -11,10 +11,10 @@ function Collab() {
       <h1>Community Allies</h1>
       {/* <p>GDSC has been honored to partner up with these Organisations</p> */}
       <Carousel />
-      <style jsx>{`
+      {/* <style jsx>{`
             
           
-          `}</style>
+          `}</style> */}
     </div>
   )
 }
