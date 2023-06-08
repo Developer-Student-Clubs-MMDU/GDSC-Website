@@ -29,7 +29,7 @@
           padding: 5%
           display: grid
           // grid-template-columns: 1fr 1fr 1fr 1fr 
-          grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))
           gap: 15px
           td  
               border-right: 2px solid #404040
@@ -67,6 +67,8 @@
     padding-bottom:3%
     table
       width: 100vw
+      @media(max-width: 1024px)
+        margin: 0% !important
       tr
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
         row-gap: 20px

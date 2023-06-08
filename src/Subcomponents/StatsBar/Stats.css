@@ -38,7 +38,7 @@
 .H-Sc-C table tr {
   padding: 5%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 15px;
 }
 .H-Sc-C table tr td {
@@ -103,6 +103,11 @@
 }
 #H-Sc table {
   width: 100vw;
+}
+@media (max-width: 1024px) {
+  #H-Sc table {
+    margin: 0% !important;
+  }
 }
 #H-Sc table tr {
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
