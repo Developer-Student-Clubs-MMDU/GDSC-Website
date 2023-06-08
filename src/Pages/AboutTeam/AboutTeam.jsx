@@ -24,13 +24,13 @@ function AboutTeam() {
 // },[])
 
     return (
-        <div className="A-Container">
-            <div className="A-1" >
+        <div className="AT-Container">
+            <div className="AT-1" >
 
                 <h1>Team</h1>
             </div>
-            <div className="A-4">
-                <div className="A-4-1" id='A-4-1'>
+            <div className="AT-4">
+                <div className="AT-4-1" id='AT-4-1'>
                 <h1>Meet The Team</h1>
                 </div>
               <Team/>
