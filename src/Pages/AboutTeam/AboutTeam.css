@@ -1,6 +1,6 @@
 .A-Container .A-1 {
   height: 30vh;
-  background-image: url(../../Assets/images/red_banner.png);
+  background-image: url(../../Assets/images/yellow_banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -25,7 +25,7 @@
   text-align: left;
   font-size: 1.08rem;
   line-height: 2rem;
-  font-weight: 100;
+  font-weight: 400;
 }
 @media (max-width: 1028px) {
   .A-Container .A-2 .A-2-1 p {
@@ -94,4 +94,4 @@
 }
 .A-Container .green {
   background: linear-gradient(#66BB6A 40%, rgb(255, 255, 255) 30%);
-}/*# sourceMappingURL=About.css.map */
+}/*# sourceMappingURL=AboutTeam.css.map */
