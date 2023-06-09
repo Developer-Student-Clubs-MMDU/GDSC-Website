@@ -98,7 +98,7 @@ var b = {
         </li>
       </div>
       <Stats data={b} component="intro"/>
-      <Stats data={a} component="insight"/>
+      <Stats data={a} component9="insight"/>
       <Media />
       <Collab />
     </div>
