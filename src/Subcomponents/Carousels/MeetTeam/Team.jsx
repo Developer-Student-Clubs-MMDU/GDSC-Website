@@ -6,14 +6,19 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
 import './Team.sass';
 import { db } from '../../../Firebase'
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, orderBy } from 'firebase/firestore';
 
 
 function Team() {
 
   const [slide, setSlide] = useState([{}]);
+
+
+ 
+
+
   const Fetch = async () => {
-    await getDocs(collection(db, "gdscTeam"))
+    await getDocs(query(collection(db, "gdscTeam"), orderBy("rank", "asc")))
       .then((querySnapshot) => {
         const newData = querySnapshot.docs
           .map((doc) => ({ ...doc.data(), id: doc.id }));
@@ -25,6 +30,9 @@ function Team() {
   useEffect(() => {
     Fetch();
   }, []);
+
+
+
 
 
   const settings = {
