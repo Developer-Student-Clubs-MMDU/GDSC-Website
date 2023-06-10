@@ -53,7 +53,7 @@ function Header() {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/UpcomingEvents">Events</Link>
+              <Link to="/Events">Events</Link>
             </li>
           </ol>
 
@@ -256,6 +256,7 @@ function Header() {
           .desktop .G-H-N ol:nth-child(2) {
             margin-right: auto;
           }
+          
         }
       `}</style>
     </div>
