@@ -5,12 +5,12 @@ import Collab from '../../Subcomponents/Carousels/Collab/Collab';
 import { Link } from 'react-router-dom'
 import Stats from '../../Subcomponents/StatsBar/Stats';
 import { HashLink } from 'react-router-hash-link';
-import { GrInstagram } from 'react-icons/gr'
-import { FiTwitter } from 'react-icons/fi'
-import { RxDiscordLogo} from 'react-icons/rx'
-import { RiYoutubeLine} from 'react-icons/ri'
-import { SlSocialLinkedin} from 'react-icons/sl'
-import { RiGithubLine} from 'react-icons/ri'
+import { AiFillInstagram, AiFillTwitterCircle } from 'react-icons/ai'
+// import { AiFillLinkedin} from 'react-icons/ai'
+import { FaDiscord} from 'react-icons/fa'
+import { AiFillYoutube} from 'react-icons/ai'
+import { AiFillLinkedin} from 'react-icons/ai'
+import { AiFillGithub} from 'react-icons/ai'
 import CountUp from 'react-countup';
 // import { db } from '../../Firebase'
 // import { collection, getDocs } from "firebase/firestore";
@@ -78,22 +78,22 @@ var b = {
         </li>
         <li className='social'>
           <td>
-            <Link to="https://www.instagram.com/gdsc_mmdu/" ><GrInstagram/></Link>
+            <Link to="https://www.instagram.com/gdsc_mmdu/" ><AiFillInstagram/></Link>
           </td>
           <td>
-            <Link to="https://twitter.com/gdsc_mmdu" >< FiTwitter/></Link>
+            <Link to="https://twitter.com/gdsc_mmdu" >< AiFillTwitterCircle/></Link>
           </td>
           <td>
-            <Link to="https://discord.com/invite/Gkb4j9rUPD" ><RxDiscordLogo/></Link>
+            <Link to="https://discord.com/invite/Gkb4j9rUPD" ><FaDiscord/></Link>
           </td>
           <td>
-            <Link to="https://www.youtube.com/channel/UCI-VV1WUuLG-1ptkoqKYf0g" ><RiYoutubeLine/></Link>
+            <Link to="https://www.youtube.com/channel/UCI-VV1WUuLG-1ptkoqKYf0g" ><AiFillYoutube/></Link>
           </td>
           <td>
-            <Link to="https://www.linkedin.com/company/dscmmdu/" ><SlSocialLinkedin/></Link>
+            <Link to="https://www.linkedin.com/company/dscmmdu/" ><AiFillLinkedin/></Link>
           </td>
           <td>
-            <Link to="https://github.com/Developer-Student-Clubs-MMDU" ><RiGithubLine/></Link>
+            <Link to="https://github.com/Developer-Student-Clubs-MMDU" ><AiFillGithub/></Link>
           </td>
         </li>
       </div>
