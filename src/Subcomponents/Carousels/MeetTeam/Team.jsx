@@ -6,12 +6,17 @@ import { IoIosArrowBack } from 'react-icons/io';
 import { IoIosArrowForward } from 'react-icons/io';
 import './Team.sass';
 import { db } from '../../../Firebase'
+import { useRef } from 'react';
 import { collection, getDocs, query, orderBy } from 'firebase/firestore';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+
 
 
 function Team() {
 
   const [slide, setSlide] = useState([{}]);
+  const sliderRef = useRef(null);
+
 
 
  
@@ -70,6 +75,13 @@ function Team() {
         }
     ]
 };
+const handlePrevious = () => {
+  sliderRef.current.slickPrev();
+};
+
+const handleNext = () => {
+  sliderRef.current.slickNext();
+};
   return (
     <div className="tag" id="tag">
       <h1> Batch {a.batch}</h1>
@@ -83,6 +95,14 @@ function Team() {
             </div>
           ))}
         </Slider>
+        <div className="carousel-buttons">
+  <button className="carousel-button" onClick={handlePrevious}>
+    <FaArrowLeft />
+  </button>
+  <button className="carousel-button" onClick={handleNext}>
+    <FaArrowRight />
+  </button>
+</div>
       </div>
     </div>
   )
