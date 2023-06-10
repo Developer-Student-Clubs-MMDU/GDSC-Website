@@ -7,7 +7,6 @@ function Magazine() {
       <h1 className="title">The Developer's Notebook</h1>
       <div className="pdf-wrapper">
         <div className="pdf-item">
-          <h1>The Developer's Notebook 2019 - 20</h1>
           <object
             data="https://viamtechnologies.com/wp-content/uploads/2023/06/Test.pdf"
             type="application/pdf"
@@ -16,7 +15,6 @@ function Magazine() {
           />
         </div>
         <div className="pdf-item">
-          <h1>The Developer's Notebook 2020 - 21</h1>
           <object
             data="https://viamtechnologies.com/wp-content/uploads/2023/06/test2.pdf"
             type="application/pdf"
@@ -25,7 +23,6 @@ function Magazine() {
           />
         </div>
         <div className="pdf-item">
-          <h1>The Developer's Notebook 2021 - 22</h1>
           <object
             data="https://viamtechnologies.com/wp-content/uploads/2023/06/test2.pdf"
             type="application/pdf"
@@ -35,8 +32,6 @@ function Magazine() {
         </div>
 
         <div className="pdf-item">
-        <h1>The Developer's Notebook 2022 - 23</h1>
-
           <object
             data="https://viamtechnologies.com/wp-content/uploads/2023/06/Test.pdf"
             type="application/pdf"
