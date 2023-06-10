@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import PastEventpage from './Events/Eventpage/PastEventpage'
-import UpcomingEventpage from './Events/Eventpage/UpcomingEventpage'
+import Eventpage from './Events/Eventpage/UpcomingEventpage'
 import About from './About/About';
 // import Eventpage from './Events/Eventpage/Eventpage';
 import Home from './Home/Home';
@@ -20,7 +20,7 @@ function Router() {
             <Route path='/' element={<Home />} />
             <Route path="/eventdetails/:id" element={<EventDetails/>} />
             <Route path="/PastEvents" element={<PastEventpage/>} />
-            <Route path="/UpcomingEvents" element={<UpcomingEventpage/>} />
+            <Route path="/Events" element={<Eventpage/>} />
             <Route path="/AboutTeam" element={<AboutTeam/>} />
             <Route path="/magazine" element={<Magazine/>} />
         </Routes>

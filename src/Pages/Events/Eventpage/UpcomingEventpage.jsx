@@ -4,12 +4,12 @@ import FutureEvents from '../../../Subcomponents/CardGrid/futureEvents';
 import Searchbar from '../../../Subcomponents/SearchBar/Searchbar';
 
 
-function UpcomingEventpage() {
+function Eventpage() {
   return (
     <>
       <div className="E-container">
         <div className="E-1 green">
-          <h1>Upcoming Events</h1>
+          <h1>Events</h1>
         </div>
         <div className="E-2">
           {/* <Searchbar  /> */}
@@ -22,4 +22,4 @@ function UpcomingEventpage() {
   )
 }
 
-export default UpcomingEventpage
+export default Eventpage
