@@ -119,7 +119,7 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link className="nav-item" to="/UpcomingEvents">
+                <Link className="nav-item" to="/Events">
                   Events
                 </Link>
               </li>
