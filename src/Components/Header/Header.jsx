@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
-import './Header.sass';
-import Logo from '../../Subcomponents/GDSClogo/Logo';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import { RxCross2 } from 'react-icons/rx';
-import { GrInstagram } from 'react-icons/gr';
-import { FiTwitter } from 'react-icons/fi';
-import { TbBrandDiscord } from 'react-icons/tb';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import "./Header.sass";
+import Logo from "../../Subcomponents/GDSClogo/Logo";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross2 } from "react-icons/rx";
+import { GrInstagram } from "react-icons/gr";
+import { FiTwitter } from "react-icons/fi";
+import { TbBrandDiscord } from "react-icons/tb";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,21 +28,23 @@ function Header() {
       setWindowSize(getWindowSize());
     }
 
-    window.addEventListener('resize', handleWindowResize);
+    window.addEventListener("resize", handleWindowResize);
 
     return () => {
-      window.removeEventListener('resize', handleWindowResize);
+      window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
 
   const scroll = () => {
     setTimeout(() => {
-      window.scrollTo({ top: 1200, left: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 1200, left: 0, behavior: "smooth" });
     }, 80);
   };
 
   return (
-    <div className={`G-H ${windowSize.innerWidth > 1400 ? 'desktop' : 'mobile'}`}>
+    <div
+      className={`G-H ${windowSize.innerWidth > 1400 ? "desktop" : "mobile"}`}
+    >
       {windowSize.innerWidth > 1400 && (
         <div className="G-H-N">
           <ol>
@@ -84,15 +86,27 @@ function Header() {
           </div>
 
           <div className="toggle-container">
-            <label htmlFor="toggle" className="button-toggle">
+            <label
+              htmlFor="toggle"
+              className={`button-toggle ${isOpen ? "active" : ""}`}
+            >
               <span className="toggle-label">
-                {isOpen ? <span className="close-icon">X</span> : <span className="menu-icon">&#9776;</span>}
+                {isOpen ? (
+                  <span className="close-icon">X</span>
+                ) : (
+                  <span className="menu-icon">&#9776;</span>
+                )}
               </span>
             </label>
-            <input type="checkbox" id="toggle" checked={isOpen} onChange={handleToggle} />
+            <input
+              type="checkbox"
+              id="toggle"
+              checked={isOpen}
+              onChange={handleToggle}
+            />
           </div>
 
-          <nav className={`nav ${isOpen ? 'open' : ''}`}>
+          <nav className={`nav ${isOpen ? "open" : ""}`}>
             <ul>
               <li>
                 <Link className="nav-item" to="/">
@@ -128,7 +142,6 @@ function Header() {
           </nav>
         </div>
       )}
-
       <style jsx>{`
         .G-H {
           position: fixed;
@@ -138,6 +151,22 @@ function Header() {
           background-color: white;
           z-index: 100;
         }
+        .button-toggle {
+          transition: transform 0.3s ease;
+        }
+
+        .button-toggle.active {
+          transform: rotate(90deg);
+        }
+
+        .nav {
+          transition: opacity 0.3s ease;
+        }
+
+        .nav.open {
+          transform: translateX(0);
+          opacity: 1;
+        }
 
         .G-H-N {
           display: flex;
@@ -145,7 +174,7 @@ function Header() {
           align-items: center;
           padding: 1rem;
         }
-        
+
         .G-H-L {
           margin-right: auto;
         }
@@ -155,14 +184,14 @@ function Header() {
           justify-content: flex-end;
           align-items: center;
         }
-        
+
         .button-toggle {
           display: inline-block;
           position: relative;
           cursor: pointer;
-          font-size : 2em;
+          font-size: 2em;
         }
-        
+
         .toggle-label {
           display: inline-block;
           padding: 6px 10px;
@@ -170,21 +199,21 @@ function Header() {
           color: #000;
           border-radius: 3px;
         }
-        
+
         .toggle-label .menu-icon {
           display: inline-block;
           margin-right: 5px;
         }
-        
+
         .close-icon {
           display: inline-block;
           font-weight: bold;
         }
-        
+
         #toggle {
           display: none;
         }
-        
+
         #toggle:checked + .button-toggle .toggle-label {
           background-color: #000;
         }
@@ -256,7 +285,6 @@ function Header() {
           .desktop .G-H-N ol:nth-child(2) {
             margin-right: auto;
           }
-          
         }
       `}</style>
     </div>
