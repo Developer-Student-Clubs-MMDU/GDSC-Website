@@ -60,7 +60,9 @@ function Header() {
           </ol>
 
           <div className="G-H-L">
-            <Logo width={windowSize} />
+            <Link to="/">
+              <Logo width={windowSize} />
+            </Link>
           </div>
 
           <ol>
@@ -82,7 +84,9 @@ function Header() {
       {windowSize.innerWidth <= 1400 && (
         <div className="mobile-nav">
           <div className="G-H-L">
-            <Logo width={windowSize} />
+            <Link to="/">
+              <Logo width={windowSize} />
+            </Link>
           </div>
 
           <div className="toggle-container">
@@ -142,7 +146,7 @@ function Header() {
           </nav>
         </div>
       )}
-      <style jsx>{`
+       <style jsx>{`
         .G-H {
           position: fixed;
           top: 0;
