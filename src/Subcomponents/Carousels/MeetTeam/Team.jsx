@@ -82,8 +82,26 @@ const handlePrevious = () => {
 const handleNext = () => {
   sliderRef.current.slickNext();
 };
+const faculty = {
+  name: 'Mr. Vishal Gupta',
+  img: 'https://firebasestorage.googleapis.com/v0/b/fire-base-admin-page.appspot.com/o/images%2FMr%20Vishal%20Gupta.jpeg?alt=media&token=5bfc4ef4-d348-4f9c-a4bf-d58831a4293e',
+  position: 'Faculty Advisor',
+};
+
   return (
+    
+    
     <div className="tag" id="tag">
+        <div className="team-container" id="team-container">
+      <h1>Faculty Advisor</h1>
+      <div className="card-container">
+        <div className="card">
+          <img src={faculty.img} alt={faculty.name} />
+          <h3>{faculty.name}</h3>
+          <p>{faculty.position}</p>
+        </div>
+      </div>
+    </div>
       <h1> Batch {a.batch}</h1>
       <div className="imgslider">
         <Slider {...settings}>
