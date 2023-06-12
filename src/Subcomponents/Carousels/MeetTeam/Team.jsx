@@ -85,7 +85,7 @@ const handleNext = () => {
 const faculty = {
   name: 'Mr. Vishal Gupta',
   img: 'https://firebasestorage.googleapis.com/v0/b/fire-base-admin-page.appspot.com/o/images%2FMr%20Vishal%20Gupta.jpeg?alt=media&token=5bfc4ef4-d348-4f9c-a4bf-d58831a4293e',
-  position: 'Faculty Advisor',
+  position: 'Assistant Professor, MMEC, MM(DU)',
 };
 
   return (
