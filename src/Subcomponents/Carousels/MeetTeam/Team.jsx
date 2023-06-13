@@ -92,7 +92,7 @@ const faculty = {
     
     
     <div className="tag" id="tag">
-        <div className="team-container" id="team-container">
+        {/* <div className="team-container" id="team-container">
       <h1>Faculty Advisor</h1>
       <div className="card-container">
         <div className="card">
@@ -101,7 +101,7 @@ const faculty = {
           <p>{faculty.position}</p>
         </div>
       </div>
-    </div>
+    </div> */}
       <h1> Batch {a.batch}</h1>
       <div className="imgslider">
         <Slider {...settings}>
