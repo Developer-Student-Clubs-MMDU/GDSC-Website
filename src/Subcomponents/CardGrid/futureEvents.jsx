@@ -1,31 +1,28 @@
-import React from 'react'
-import './Card.sass'
-import { Link } from 'react-router-dom'
-import { db } from '../../Firebase'
+import React from "react";
+import "./Card.sass";
+import { Link } from "react-router-dom";
+import { db } from "../../Firebase";
 // import { collection, getDocs } from "firebase/firestore";
-import { useEffect, useState } from 'react'
-import Data from './PastEvents';
+import { useEffect, useState } from "react";
+import Data from "./PastEvents";
 import { getDocs, query, collection, orderBy } from "firebase/firestore";
 
-
-
 function FutureEvents() {
-  const [collapse, set ]= useState(false);
+  const [collapse, set] = useState(false);
   const [cards, setCards] = useState([{}]);
-  
+
   const Fetch = async () => {
     await getDocs(
-      query(collection(db, "users"),orderBy("TimeStamp", "desc"))
-    )
-    .then((querySnapshot) => {
+      query(collection(db, "users"), orderBy("TimeStamp", "desc"))
+    ).then((querySnapshot) => {
       const newData = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
-        id: doc.id
+        id: doc.id,
       }));
       setCards(newData);
       console.log(cards);
     });
-  }
+  };
 
   useEffect(() => {
     Fetch();
@@ -108,21 +105,21 @@ function FutureEvents() {
 
   return (
     <div className="E-SC-container">
-      {
-        cards.map((item) => {
-          var flag = false
-          return(
-            <div className="E-SC-1" key={item.id} >
+      {cards.map((item) => {
+        var flag = false;
+        return (
+          <div className="E-SC-1" key={item.id}>
             <div className="E-SC-1-1">
-            <img src={item.imageUrl} alt="" />
+              <img src={item.imageUrl} alt="" />
             </div>
             <div className="E-SC-1-2">
-             
-                <table>
-                  <tr>
-                    <td colSpan="2" id="head" >{item.title}</td>
-                  </tr>
-                  {/* <tr>
+              <table>
+                <tr>
+                  <td colSpan="2" id="head">
+                    {item.title}
+                  </td>
+                </tr>
+                {/* <tr>
                     <td colSpan="2" >
                       <p className={ collapse ? "":'lineClamp' }>{item.description}</p>
                       <li  >
@@ -136,33 +133,37 @@ function FutureEvents() {
                         </li>
                     </td>
                   </tr> */}
-                  
-                  <tr  >
-                    <td colSpan="2" id="subhead">Details</td>
-                  </tr>
-                  <tr>
-                    <td>Date :</td>
-                    <td>{item.date}</td>
-                  </tr>
-                  <tr>
-                    <td>Time :</td>
-                    <td> {item.startTime} to {item.finishTime} </td>
-                  </tr>
-                  <tr>
-                    <td>Venue : </td>
-                    <td>{item.venue}</td>
-                  </tr>
-                </table>
-                <button>
-                  <Link to={item.form}> Register</Link>
-                </button>
+
+                <tr>
+                  <td colSpan="2" id="subhead">
+                    Details
+                  </td>
+                </tr>
+                <tr>
+                  <td>Date :</td>
+                  <td>{item.date}</td>
+                </tr>
+                <tr>
+                  <td>Time :</td>
+                  <td>
+                    {" "}
+                    {item.startTime} to {item.finishTime}{" "}
+                  </td>
+                </tr>
+                <tr>
+                  <td>Venue : </td>
+                  <td>{item.venue}</td>
+                </tr>
+              </table>
+              <button>
+                <Link to={item.form}> Register</Link>
+              </button>
             </div>
           </div>
-           )
-        })}
-    </div>)
+        );
+      })}
+    </div>
+  );
 }
 
-export default FutureEvents
-
-
+export default FutureEvents;
