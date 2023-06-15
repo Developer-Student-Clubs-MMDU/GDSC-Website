@@ -32,7 +32,7 @@ function Carousel() {
     const images = ["https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png", "https://logospng.org/download/react/logo-react-512.png"];
 
     const settings = {
-        infinite: true,
+        // infinite: true,
         dots: true,
         slidesToShow: 5,
         slidesToScroll: 5,
@@ -71,11 +71,11 @@ function Carousel() {
     };
     return (
 
-        <div className="tag">
-            <div className="imgslider">
+        <div className="tagC">
+            <div className="imgsliderC">
                 <Slider {...settings}>
                     {todos.map((item) => (
-                        <div className="slide" id="card" >
+                        <div className="slideC" id="card" >
                             <img src={item.imageurl} />
                         </div>
                     ))}
