@@ -2,22 +2,29 @@ import React from 'react'
 import './Card.sass'
 import { Link } from 'react-router-dom'
 import { db } from '../../Firebase'
-import { collection, getDocs } from "firebase/firestore";
+// import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from 'react'
 import Data from './PastEvents';
+import { getDocs, query, collection, orderBy } from "firebase/firestore";
+
 
 
 function FutureEvents() {
-  const [collapse, set ]= useState(false)
+  const [collapse, set ]= useState(false);
   const [cards, setCards] = useState([{}]);
+  
   const Fetch = async () => {
-    await getDocs(collection(db, "users"))
-      .then((querySnapshot) => {
-        const newData = querySnapshot.docs
-          .map((doc) => ({ ...doc.data(), id: doc.id }));
-        setCards(newData);
-        console.log(cards);
-      })
+    await getDocs(
+      query(collection(db, "users"),orderBy("TimeStamp", "desc"))
+    )
+    .then((querySnapshot) => {
+      const newData = querySnapshot.docs.map((doc) => ({
+        ...doc.data(),
+        id: doc.id
+      }));
+      setCards(newData);
+      console.log(cards);
+    });
   }
 
   useEffect(() => {
