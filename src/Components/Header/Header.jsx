@@ -71,7 +71,7 @@ function Header() {
             </li>
             <li>
               <Link to="/#H-SC-Body" onClick={scroll}>
-                Work
+                Highlights
               </Link>
             </li>
             <li>
@@ -129,7 +129,7 @@ function Header() {
               </li>
               <li>
                 <Link className="nav-item" to="/#H-SC-Body" onClick={scroll}>
-                  Work
+                  Highlights
                 </Link>
               </li>
               <li>

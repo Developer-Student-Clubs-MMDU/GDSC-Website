@@ -6,7 +6,7 @@ function Media() {
         <>
             <div className="H-SC-Container">
                 <div className="H-SC-Header">
-                    <h3>RECENT WORKS</h3>
+                    <h3>INSTAGRAM HIGHLIGHTS</h3>
                     <h1>We love what we do, check out some of our latest works</h1>
                 </div>
                 <div className="H-SC-Body" id="H-SC-Body">
